@@ -39,8 +39,11 @@ Expires字段指定一个日期/实践绝对值。在系统时间在该时间后
 Expires: Wed, 21 Oct 2015 07:28:00 GMT
 ```
 ## 协商缓存
+
 当强缓存没有命中的时候，浏览器一定会发送一个请求到服务器。通过服务器端依据资源的另外一些http header验证这个资源是否命中协商缓存。如果协商缓存命中，
 服务器会将这个请求返回（304）。但是不会返回这个资源的数据，而是告诉客户端可以直接从缓存中加载这个资源。于是浏览器就又会从自己的缓存中去加载这个资源；
 若未命中请求，则将资源返回客户端，并更新本地缓存数据（200）。
-### Last-Modified/If-Modified-Since要配合Cache-Control
-### Etag/If-None-Match也要配合Cache-Control
+
+### Last-Modified/If-Modified-Since配合Cache-Control
+
+### Etag/If-None-Match配合Cache-Control
