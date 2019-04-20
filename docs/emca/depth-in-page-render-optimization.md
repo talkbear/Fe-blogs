@@ -1,9 +1,11 @@
 # 浏览器加载顺序
 
 **图片简要描述：**
+
 ![loading progress of page](https://github.com/ethanbear/fe-blogs/raw/master/assets/images/fp_firstPaint-1.jpg)
 
 **文字详细描述**
+
 1.输入url后，请求首页html；
 2.html文档下载完成后，解析文档；
 3.加载外链css,js和ico；（注：现代某些浏览器会很智能的提前'偷窥'html中是否有如link,img,script等外链标签，并着手提前加载对应资源；）
