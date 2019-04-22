@@ -35,6 +35,7 @@
 - First Paint和DOMContentLoaded、load事件的触发没有绝对的关系，没有固定的顺序；
 - body中第一个脚本前的css文件中，引用外部字体文件，则渲染过程会在字体下载完成后执行；
 - 默认情况下，CSS外链之间是谁先加载完成谁先解析，但是JS外链之间即使先加载完成，也得按顺序执行。
+- onload事件不仅仅适用于body，同样适用于<frame>,<frameset>,<iframe>,<img>,<link>,<script>；支持事件对象有image,layer,window;
 
 # 参考文章
 - [eux.baidu.com: chrome的First Paint](http://eux.baidu.com/blog/fe/Chrome%E7%9A%84First%20Paint)
