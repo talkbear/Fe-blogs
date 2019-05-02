@@ -56,3 +56,10 @@ lvdisplay
   Block device           253:0
 ```
 
+将调整应用到文件系统
+
+```
+resize2fs /dev/ubuntu-vg/ubuntu-lv
+```
+
+完成。
