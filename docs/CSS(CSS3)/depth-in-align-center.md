@@ -6,6 +6,7 @@
 
 ### display
 
+**display:flex + align-items: center or + justify-content:center**
 ```
 display: flex;
 align-items: center;
@@ -16,7 +17,8 @@ flex-direction: column;
 justify-content: center;
 ```
 
-apply auto margins to a flex item, the flex item will extends it's margin to occupy the extra space
+**dispay: flex + margin: auto: apply auto margins to a flex item, the flex item will extends it's margin to occupy the extra space**
+
 ```
 display: flex;
 .child{
@@ -25,12 +27,46 @@ display: flex;
 ```
 > 当你觉得align-item:center;justify-conent:center;不能满足你的需求，试试这种方式。它最大的特点就是不会限制于flex父亲元素的宽高。使其具备更大的自由性。
 
+**display: table-cell + vertical-align:**
+
+```
+display: table-cell;
+    vertical-align: middle;
+    text-align: center; 
+```
+
+**dispaly:inline-block+ vertial-align, 这种方式通过使用为元素占位实现文本垂直剧中:**
+```
+.center::before{
+    content: '';
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+```
+
 ### position
+
+**position + translate**
 
 ```
     position: relative/absolute/fixed/sticy;
     top: 50%;
     transform: translateY(-50%);
+```
+
+
+**postion:absolute/fixed/sitcy + 0:**
+
+```
+  width: 50%; 
+  height: 50%; 
+  background: #000;
+  overflow: auto; 
+  margin: auto; 
+  position: absolute; 
+  top: 0; left: 0; bottom: 0; right: 0; 
 ```
 
 ### line-height
@@ -62,24 +98,6 @@ display: flex;
 line-height: 200px;
 display: inline-block;
 height: 200px;
-```
-
-## inline + inline(text + inline)
-
-### vertical-align
-
-这种方式通过使用为元素占位实现文本垂直剧中
-```
-.center::before{
-    content: '';
-    width: 0;
-    height: 100%;
-    display: inline-block;
-    vertical-align: middle;
-}
-```
-
-```
 ```
 
 # 2. horizontal center align 
