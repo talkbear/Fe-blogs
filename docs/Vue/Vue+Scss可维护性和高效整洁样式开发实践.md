@@ -36,6 +36,7 @@
 
 
 ### 可维护性
+**变量提取**
 **利用CSS继承**
 **命名规范**
 **减少样式层叠**
@@ -49,4 +50,4 @@
 
 # 参考
 
-1.[React组件设计实践与总结系列文章](https://juejin.im/search?query=React%E7%BB%84%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5%E6%80%BB%E7%BB%93&type=all)
+1.[React组件设计实践与总结系列文章](https://juejin.im/post/5cdad9c7f265da039b08915d)
