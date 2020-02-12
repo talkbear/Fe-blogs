@@ -65,3 +65,4 @@
 # 参考
 
 1.[React组件设计实践与总结系列文章](https://juejin.im/post/5cdad9c7f265da039b08915d)
+2.[谷歌性能](https://developers.google.com/web/fundamentals/performance/why-performance-matters)
