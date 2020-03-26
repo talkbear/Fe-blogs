@@ -44,6 +44,22 @@ body{
 
 ```
 
+**问题2 position:fixed 元素不能从根元素或父元素继承zoom属性，导致未缩放**
+
+使用js解决方案
+```
+const scaleValue = width / maxwidth
+$('.zoom').css({zoom: scaleValue})
+```
+
+**问题3 position:fixed;top:0;left:0;right:0;bottom:0;元素高度缩放时高度变化，导致zoom后高度未撑满屏幕高度
+由于在屏幕缩放过程中，高度也在变化，高度*zoomRate不等于屏幕高度
+``
+.zoomdiv{
+width: 1280px;
+height: 1280px; // 可以设置宽高一样，zoom是1比1缩放的
+}
+```
 
 ## transform:scale(x)——zoom属性替代方案
 
