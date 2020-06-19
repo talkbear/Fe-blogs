@@ -1,0 +1,4 @@
+# readonly特性
+- 【All】添加readonly特性的元素，无法聚焦焦点，但依然能监听点击事件；
+- 【IOS/Andriod】阻止键盘展开：设置readonly属性
+- 【IOS】阻止键盘展开和键盘上面的小导航栏（包含完成按钮的）：设置readonly属性的同时，设置onfocus="this.blur()"
