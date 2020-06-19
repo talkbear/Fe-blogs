@@ -68,4 +68,30 @@ body{
 // 记录弹框前的scrolltop值
 var beforeTop = document.docElement.scrollTop
 ```
+- 在匿名函数中调用苹果的媒体播放功能提示playSound error: NotAllowedError
+
+>参考苹果[官方文档](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/PlayingandSynthesizingSounds/PlayingandSynthesizingSounds.html#//apple_ref/doc/uid/TP40009523-CH6-SW5),明确写明播媒体文件必须是用户显示触发的事件回调里面。
+
+即不能在settmeout,setinterval或立即执行函数等函数等和事件回调函数不一致的上下文中执行播放脚本。
+
+```
+document.querySelector('#play').addEventListener('click', function(){
+    // 播放成功
+    var audio = new Audio('test.mp3')
+    audio.play()
+    
+    // 播放失败
+    // 立即执行函数
+    (function(){
+        var audio = new Audio('test.mp3')
+        audio.play()
+    })()
+    // settimeou/setinterval
+    settimeout(function(){
+        var audio = new Audio('test.mp3')
+        audio.play()
+    })
+})
+```
+
 
