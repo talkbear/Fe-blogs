@@ -31,7 +31,7 @@
 > 参考[手机淘宝页面方案](https://www.cnblogs.com/zhuanshen/p/7098707.html)
 
 ## 【常见IOS问题】
-- 下面这句是解决placeholder在ios 端的input框中显示偏上
+- 【下面这句是解决placeholder在ios 端的input框中显示偏上】
 
 ```
 input::-webkit-input-placeholder {
@@ -40,17 +40,17 @@ input::-webkit-input-placeholder {
 ```
 
 
-- position:fixed; input框ios端就不能输入了；
+- 【position:fixed; input框ios端就不能输入了；】
 input{
     -webkit-user-select:auto!important;
     user-select:auto!important;
 }
 
-- ios webview避免使用position:fixed；
+- 【ios webview避免使用position:fixed；】
 
-- position:fixed;可能引发问题汇总,ios输入框cursor问题；
+- 【position:fixed;可能引发问题汇总,ios输入框cursor问题；】
 
-- ios移动端 软键盘收起后 ，出现白底，未跟随软键盘收回；
+- 【ios移动端 软键盘收起后 ，出现白底，未跟随软键盘收回；】
 
 ```
 $(input).on('blur', function(){
@@ -68,7 +68,7 @@ body{
 // 记录弹框前的scrolltop值
 var beforeTop = document.docElement.scrollTop
 ```
-- 在匿名函数中调用苹果的媒体播放功能提示playSound error: NotAllowedError
+- 【在匿名函数中调用苹果的媒体播放功能提示playSound error: NotAllowedError】
 
 >参考苹果[官方文档](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/PlayingandSynthesizingSounds/PlayingandSynthesizingSounds.html#//apple_ref/doc/uid/TP40009523-CH6-SW5),明确写明播媒体文件必须是用户显示触发的事件回调里面。
 
@@ -93,5 +93,13 @@ document.querySelector('#play').addEventListener('click', function(){
     })
 })
 ```
+- 【mouseenter事件在IOS系统浏览器中，导致click事件需双击才能触发】
 
+```
+// 监听touchstart事件，手动触发一次click事件，模拟双击
+docuemnt.querySelector('.target').addEventListener('touchstart', function(){
+    this.click()
+})
+```
+> 这里如果监听click，和touchend事件也可以（前提是这些事件的回调函数里面为阻止事件传播，最安全的方式是监听touchstart事件，因为它最早触发）
 
