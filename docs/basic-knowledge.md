@@ -11,29 +11,30 @@
 - Stact Overflow技术栈
 - https://stackshare.io/——收集了目前市面上很多大产品用到的技术栈，当你不知道如何根据应用场景选择技术栈，又没有时间去实践所有的技术框架时。你可以参考StackShare上相似产品的技术栈
 MDN
+
 **书籍**
-es6标准入门（阮一峰）——http://es6.ruanyifeng.com/
-https://hpbn.co/——high performance browser networking
-http://www.allitebooks.org/——你猜
-https://www.zzzbook.com/
-https://github.com/it-ebooks
-《javascript高级程序设计》
-《你知道的js》——上中下
-《javascript忍者秘籍》第二版
-《javascript权威指南》
-《CSS揭秘》
-《精通css》第二版/第三版
-《深入浅出node》
-《图解HTTP》
-《HTTP权威指南》
-《我的第一本算法书》
-《算法》第四版
-《HTML秘籍》——manning
-《css秘笈》——manning
-《css权威指南》
-《javascript DOM编程艺术》
-《HTTP/2基础教程》
-《css世界》
+- es6标准入门（阮一峰）——http://es6.ruanyifeng.com/
+- https://hpbn.co/——high performance browser networking
+- http://www.allitebooks.org/——你猜
+- https://www.zzzbook.com/
+- https://github.com/it-ebooks
+- 《javascript高级程序设计》
+- 《你知道的js》——上中下
+- 《javascript忍者秘籍》第二版
+- 《javascript权威指南》
+- 《CSS揭秘》
+- 《精通css》第二版/第三版
+- 《深入浅出node》
+- 《图解HTTP》
+- 《HTTP权威指南》
+- 《我的第一本算法书》
+- 《算法》第四版
+- 《HTML秘籍》——manning
+- 《css秘笈》——manning
+- 《css权威指南》
+- 《javascript DOM编程艺术》
+- 《HTTP/2基础教程》
+- 《css世界》
 
 # 背景
 
