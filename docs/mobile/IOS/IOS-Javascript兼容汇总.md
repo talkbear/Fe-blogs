@@ -48,7 +48,16 @@ input{
 
 - 【ios webview避免使用position:fixed；】
 
-- 【position:fixed;可能引发问题汇总,ios输入框cursor问题；】
+> 
+
+- 【position:fixed;可能引发问题汇总,ios输入框cursor问题移位；】
+
+```
+// method 1 隐藏caret-color:transpatent
+// method 2 text-indext: -极大值；
+// 11.3版本后已解决
+
+```
 
 - 【ios移动端 软键盘收起后 ，出现白底，未跟随软键盘收回；】
 
