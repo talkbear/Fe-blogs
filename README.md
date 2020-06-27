@@ -1,7 +1,6 @@
 # 性能优化
 
-- [浅谈http性能优化](https://github.com/ethanbear/Demo-fe-optmization-practice/blob/master/docs/http-optmization.md)
-
+# [基础](https://github.com/talkbear/Fe-blogs/tree/master/docs/index.md)
 # [HTML](https://github.com/talkbear/Fe-blogs/tree/master/docs/HTML%26DOM(spec))
 
 # [CSS](https://github.com/talkbear/Fe-blogs/tree/master/docs/CSS(CSS3))
