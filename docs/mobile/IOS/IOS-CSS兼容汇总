@@ -1,1 +1,5 @@
 - -webkit-tap-highlight-color：设置元素点击时背景颜色
+- 元素:active未触发 添加ontouchstart属性到标签上即可
+```
+<div ontouchstart>立即登录</div>
+```
