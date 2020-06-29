@@ -3,3 +3,17 @@
 ```
 <div ontouchstart>立即登录</div>
 ```
+- 不同浏览器针对亚像素（小数位像素）值处理方式不同，具体为
+  - 1、四舍五入的浏览器：IE8、IE9、Chrome、Firefox
+  - 2、直接取整的浏览器：IE7、Safari
+延申：
+```
+使用rem实现移动端开发时，设置rem值根据不同的浏览器给与不同的值
+
+var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+if(ios){
+var fontsize = 12.6
+document.body.fontSize = parseInt(fontsize)
+}
+```
+ 
