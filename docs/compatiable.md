@@ -30,3 +30,4 @@ background-image： url(/path/to/svg)
 // 方法二： canvas方案 利用canvas对象自带的函数可实现
 // 略
 ```
+- 【IOS】Safari不支持stroke-dashoffset的负数值
