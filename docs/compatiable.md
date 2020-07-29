@@ -31,3 +31,7 @@ background-image： url(/path/to/svg)
 // 略
 ```
 - 【IOS】Safari不支持stroke-dashoffset的负数值
+- 【IOS】添加overflow-y:auto|scroll;后 页面滑动不流畅
+```
+-webkit-overflow-scrolling:touch;
+```
