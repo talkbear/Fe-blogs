@@ -35,3 +35,7 @@ background-image： url(/path/to/svg)
 ```
 -webkit-overflow-scrolling:touch;
 ```
+- 【IOS】负margin值在ios webview出现滑动时被遮住的问题
+```
+！！！！避免使用负的margin值
+```
