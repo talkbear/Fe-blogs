@@ -39,3 +39,66 @@ background-image： url(/path/to/svg)
 ```
 ！！！！避免使用负的margin值
 ```
+
+- 【IOS】copy到粘贴板 不兼容iphnee7p
+```
+
+  var copyToClipboard = function copyToClipboard(text) {
+  return new Promise(function (resolve, reject) {
+    var fallbackCopyTextToClipboard = function fallbackCopyTextToClipboard(text) {
+      var textArea = document.createElement('textarea');
+      textArea.value = text;
+      textArea.style.position = 'fixed'; // avoid scrolling to bottom
+      document.body.appendChild(textArea);
+      textArea.focus();
+      var isIOS = /iPad|iPhone|iPod/.test(navigator.platform) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+      if(isIOS){
+        var range = document.createRange();
+
+        textArea.contentEditable = true;
+        textArea.readOnly = false;
+        range.selectNodeContents(textArea);
+
+        var s = window.getSelection();
+        s.removeAllRanges();
+        s.addRange(range);
+
+        textArea.setSelectionRange(0, 999999); // A big number, to cover anything that could be inside the element.
+      }else{
+        textArea.select();
+      }
+
+      try {
+        var successful = document.execCommand('copy');
+        resolve({
+          data: successful
+        });
+      } catch (err) {
+        reject(err);
+      }
+
+      document.body.removeChild(textArea);
+    };
+
+    var copyTextToClipboard = function copyTextToClipboard(text) {
+      if (!navigator.clipboard) {
+        console.log('not surrpport', text)
+        fallbackCopyTextToClipboard(text);
+        return;
+      }
+
+      navigator.clipboard.writeText(text).then(function () {
+        console.log('surrpport', text)
+        resolve({
+          data: 1
+        });
+      }, function (err) {
+        reject(err);
+      });
+    };
+
+    copyTextToClipboard(text);
+  });
+};
+```
