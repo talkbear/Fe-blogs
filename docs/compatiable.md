@@ -102,3 +102,4 @@ background-image： url(/path/to/svg)
   });
 };
 ```
+- 【IE】SVG dashoffset 值尽量大于svg图形的length长度，否则会出现偏差
