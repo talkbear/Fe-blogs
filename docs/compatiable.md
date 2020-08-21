@@ -103,3 +103,11 @@ background-image： url(/path/to/svg)
 };
 ```
 - 【IE】SVG dashoffset 值尽量大于svg图形的length长度，否则会出现偏差
+
+- 【IOS,Android】html,body 100vh 和100% 处理方式不一样
+  - IOS 100vh高度包含了上下导航位置的高度，因此会出现滚动条
+  - android 100vh高度则不包含上下导航位置高度，因此不会出现滚动条
+  
+  - 安卓IOS,100%表现形式一致，都是可视窗口高度
+  
+  
