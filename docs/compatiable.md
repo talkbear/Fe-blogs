@@ -110,4 +110,12 @@ background-image： url(/path/to/svg)
   
   - 安卓IOS,100%表现形式一致，都是可视窗口高度
   
+- 【WeChat,IOS,Android】判断当前浏览器是否是微信内置浏览器
+```
+if(req.headers['user-agent'].indexOf('MicroMessenger') !== -1){
+  //we are in wechat browser
+  your code here
+}  
+```
+  
   
