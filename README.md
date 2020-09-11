@@ -16,3 +16,9 @@
 
 # [Mobile](https://github.com/talkbear/Fe-blogs/tree/master/docs/mobile)
 # [Vue](https://github.com/talkbear/Fe-blogs/tree/master/docs/Vue)
+
+
+# 思考
+
+# [工程问题记录](https://github.com/talkbear/Fe-blogs/blob/master/docs/soft-engineering.md)
+
