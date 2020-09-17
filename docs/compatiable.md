@@ -117,5 +117,10 @@ if(req.headers['user-agent'].indexOf('MicroMessenger') !== -1){
   your code here
 }  
 ```
-  
+- 【IOS】ios对display:inline-block的处理不同手机会出现不一致。
+如iphone7p在div列表使用display:inline-block的时候,会出现某一条数据出现间距异常。
+```
+使用display:flex;flex-wrap:wrap;替换
+```
+
   
