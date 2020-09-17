@@ -22,3 +22,9 @@
 
 # [工程问题记录](https://github.com/talkbear/Fe-blogs/blob/master/docs/soft-engineering.md)
 
+
+# 学习
+
+# [高等数学预科笔记](https://github.com/talkbear/Fe-blogs/blob/master/docs/math/middle-math-notes.md)
+# [高等数学笔记](https://github.com/talkbear/Fe-blogs/blob/master/docs/math/senior-math-notes.md)
+
