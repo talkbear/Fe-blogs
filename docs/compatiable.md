@@ -122,5 +122,13 @@ if(req.headers['user-agent'].indexOf('MicroMessenger') !== -1){
 ```
 使用display:flex;flex-wrap:wrap;替换
 ```
+- 【IOS】fixed元素设置100vh后，底部按钮区域遮住部分内容。
 
+> 根据safari官方描述，这是浏览器设计的初衷，以解决其他的一些问题。因此，避免这种使用方式，比如用100%替换100vh。
+```
+position: fixed;
+height: 100%;
+left:0;
+bottom:0;
+```
   
